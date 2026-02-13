@@ -1,0 +1,352 @@
+﻿{
+    "inputParameters": [
+        {
+            "name": "BodySide",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Side"
+                },
+                {
+                    "language": "ro",
+                    "value": "Mână"
+                }
+            ],
+            "type": "list",
+            "value": [
+                {
+                    "text": [
+                        {
+                            "language": "en",
+                            "value": "Left"
+                        },
+                        {
+                            "language": "ro",
+                            "value": "Stânga"
+                        }
+                    ],
+                    "value": "0"
+                },
+                {
+                    "text": [
+                        {
+                            "language": "en",
+                            "value": "Right"
+                        },
+                        {
+                            "language": "ro",
+                            "value": "Dreapta"
+                        }
+                    ],
+                    "value": "1"
+                }
+            ],
+            "defaultValue": "0",
+            "isImplicit": true,
+            "runtimeUpdate": false,
+            "observedEvents": [
+                {
+                    "name": "enable",
+                    "activeEventNames": [
+                        "onNoGameIsPlaying"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "IterationCount",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Iterations"
+                },
+                {
+                    "language": "ro",
+                    "value": "Iterații"
+                }
+            ],
+            "finalText": [
+                {
+                    "language": "en",
+                    "value": "games"
+                },
+                {
+                    "language": "ro",
+                    "value": "jocuri"
+                }
+            ],
+            "type": "int",
+            "defaultValue": "1",
+            "minValue": "1",
+            "maxValue": "10",
+            "isImplicit": true,
+            "isHomeUseOnly": true
+        },
+        	    {
+            "name": "CountdownTimer",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Countdown Timer (min)"
+                },
+                {
+                    "language": "ro",
+                    "value": "Timp limită (min)"
+                }
+            ],
+            "type": "list",
+	        "runtimeUpdate": false,
+            "value": [
+                {
+                    "text": "None",
+                    "value": "0"
+                },
+                {
+                    "text": "1 min",
+                    "value": "1"
+                },
+                {
+                    "text": "2 min",
+                    "value": "2"
+                },
+                {
+                    "text": "3 min",
+                    "value": "3"
+                },
+                {
+                    "text": "4 min",
+                    "value": "4"
+                },
+                {
+                    "text": "5 min",
+                    "value": "5"
+                }
+            ],
+            "defaultValue": "0",
+            "categoryName": "Game",
+            "observedEvents": [
+                {
+                    "name": "enable",
+                    "activeEventNames": [
+                        "onNoGameIsPlaying"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CleanRequirement",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Clean Requirement"
+                },
+                {
+                    "language": "ro",
+                    "value": "Cerință curățare"
+                }
+            ],
+            "type": "int",
+            "defaultValue": "90",
+            "minValue": "0",
+            "maxValue": "100",
+            "runtimeUpdate": false,
+            "categoryName": "Game"
+        },
+        {
+            "name": "WindowAngle",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Angle"
+                },
+                {
+                    "language": "ro",
+                    "value": "Unghi"
+                }
+            ],
+            "type": "int",
+            "defaultValue": "180",
+            "minValue": "0",
+            "maxValue": "360",
+            "runtimeUpdate": true,
+            "categoryName": "WindowPosition"
+        },
+        {
+            "name": "WindowDistance",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Distance"
+                },
+                {
+                    "language": "ro",
+                    "value": "Distanță"
+                }
+            ],
+            "type": "int",
+            "defaultValue": "13",
+            "minValue": "1",
+            "maxValue": "20",
+            "runtimeUpdate": true,
+            "categoryName": "WindowPosition"
+        },
+        {
+            "name": "WindowHeightPosition",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Height"
+                },
+                {
+                    "language": "ro",
+                    "value": "Înălțime"
+                }
+            ],
+            "type": "int",
+            "defaultValue": "50",
+            "minValue": "1",
+            "maxValue": "100",
+            "runtimeUpdate": true,
+            "categoryName": "WindowPosition"
+        },
+        {
+            "name": "WindowHeightSize",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Height"
+                },
+                {
+                    "language": "ro",
+                    "value": "Înălțime"
+                }
+            ],
+            "type": "int",
+            "defaultValue": "100",
+            "minValue": "1",
+            "maxValue": "100",
+            "runtimeUpdate": true,
+            "categoryName": "WindowSize"
+        },
+        {
+            "name": "WindowWidthSize",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Width"
+                },
+                {
+                    "language": "ro",
+                    "value": "Lălțime"
+                }
+            ],
+            "type": "int",
+            "defaultValue": "100",
+            "minValue": "1",
+            "maxValue": "100",
+            "runtimeUpdate": true,
+            "categoryName": "WindowSize"
+        },
+        {
+            "name": "SpongeSize",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Size"
+                },
+                {
+                    "language": "ro",
+                    "value": "Mărime"
+                }
+            ],
+            "type": "int",
+            "defaultValue": "5",
+            "minValue": "1",
+            "maxValue": "10",
+            "runtimeUpdate": true,
+            "categoryName": "Sponge"
+        }
+    ],
+    "inputParameterCategories": [
+        {
+            "name": "Game",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Game"
+                },
+                {
+                    "language": "ro",
+                    "value": "Joc"
+                }
+            ]
+        },
+        {
+            "name": "WindowPosition",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Window Position"
+                },
+                {
+                    "language": "ro",
+                    "value": "Poziție Fereastră"
+                }
+            ]
+        },
+        {
+            "name": "WindowSize",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Window Size"
+                },
+                {
+                    "language": "ro",
+                    "value": "Mărime Fereastră"
+                }
+            ]
+        },
+        {
+            "name": "Sponge",
+            "text": [
+                {
+                    "language": "en",
+                    "value": "Sponge"
+                },
+                {
+                    "language": "ro",
+                    "value": "Burete"
+                }
+            ]
+        }
+    ],
+    "buttons" : [
+        {
+            "name": "startgame",
+            "text": "Start Game",
+            "type": "start",
+            "observedEvents": [
+                {
+                    "name": "show",
+                    "activeEventNames": [
+                        "onNoGameIsPlaying"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "stopgame",
+            "text": "Stop Game",
+            "type": "stop",
+            "observedEvents": [
+                {
+                    "name": "show",
+                    "activeEventNames": [
+                        "onGameIsPlaying"
+                    ]
+                }
+            ]
+        }
+    ]
+}
